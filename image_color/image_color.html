@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/image_color.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="image">
+            <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAe0AAAAJDBmN2U5YzE5LWU1N2QtNDQyOS1hZjBmLTJhOTdmOTdhNjQ2ZQ.jpg" alt="" id="samir">
+        </div>
+        <div class="button">
+            <button id="blur" onclick="color1()">blur(4px)</button>
+            <button id="brightness" onclick="color2()">brightness(0.30)</button>
+            <button id="contrast" onclick="color3()">contrast(180%)</button>
+            <button id="shadow" onclick="color4()">grayscale(100%)</button>
+            <button id="grayscale" onclick="color5()">hue-rotate(180deg)</button>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        function color1() {
+            document.getElementById('samir').style.filter = "blur(4px)";
+        }
+
+        function color2() {
+            document.getElementById('samir').style.filter = "brightness(0.30)";
+        }
+
+        function color3() {
+            document.getElementById('samir').style.filter = "contrast(180%)";
+        }
+
+        function color4() {
+            document.getElementById('samir').style.filter = "grayscale(100%)";
+        }
+
+        function color5() {
+            document.getElementById('samir').style.filter = "hue-rotate(180deg)";
+        }
+    </script>
+</body>
+
+</html>

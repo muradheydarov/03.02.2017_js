@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/text.css">
+    <title>Document</title>
+</head>
+
+<body>
+  <div class="main">
+  <div class="input">
+    <input type="text" name="" value="" id="text" placeholder="Enter text">
+    <button type="button" name="button" onclick="textValue()">Submit</button>
+  </div>
+  <div class="text">
+    <p id="enter">Your text will be here...</p>
+  </div>
+  <div class="button">
+    <button type="button" name="button" onclick="italic()">Italic</button>
+    <button type="button" name="button" onclick="bold()">Bold</button>
+    <input type="text" name="" value="" placeholder="Enter font size" id="font_size">
+    <button type="button" name="button" onclick="fontSize()">Submit</button>
+  </div>
+  </div>
+    <script type="text/javascript">
+        function textValue() {
+            var a = document.getElementById("text").value;
+            var b = document.getElementById('enter');
+            b.innerHTML = a;
+        }
+
+        function italic() {
+            var a = document.getElementById("text").value;
+            var b = document.getElementById('enter');
+            b.style.fontStyle = "italic";
+        }
+
+        function bold() {
+            var a = document.getElementById("text").value;
+            var b = document.getElementById('enter');
+            b.style.fontWeight = "bold";
+        }
+
+        function fontSize() {
+            var a = document.getElementById("text").value;
+            var b = document.getElementById('enter');
+            var c = document.getElementById('font_size').value;
+            b.style.fontSize = c + "px";
+        }
+    </script>
+</body>
+
+</html>

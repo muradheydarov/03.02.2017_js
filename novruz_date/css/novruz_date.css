@@ -1,0 +1,21 @@
+body,html{
+  margin: 0;
+  padding: 0;
+}
+.main{
+  background: url("http://photos.today.az/images/104068/Tonqal.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+}
+p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  position: relative;
+  top: 30px;
+  font-family: 'Lobster', cursive;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="css/novruz_date.css">
+</head>
+<body>
+  <div class="main">
+    <p>5 gün dayanmadan 20sinən qalan yeməkləri yeməyə</p>
+    <p id="demo"></p>
+    <p>Qalıb</p>
+  </div>
+  <script type="text/javascript">
+
+var countDownDate = new Date("March 20, 2017 00:00:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "DURUN YANDIRIN ŞAMI;";
+  }
+}, 1000);
+  </script>
+</body>
+</html>

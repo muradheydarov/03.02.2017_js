@@ -1,0 +1,22 @@
+.main{
+  width: 80%;
+  margin: 0 auto;
+}
+.image{
+  width: 20%;
+  margin: 0 auto;
+}
+img{
+  border-radius: 20px;
+}
+.button{
+  width: 100%;
+  text-align: center;
+}
+button{
+  background: rgb(68, 156, 230);
+  border: none;
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+}

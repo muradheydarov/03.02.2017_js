@@ -1,0 +1,30 @@
+.main{
+  width: 18%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  border-radius: 30px;
+}
+.main_item{
+  width: 40%;
+  height: 350px;
+}
+.main_item div{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.red{
+  background: red;
+  border-radius: 100%;
+}
+.yellow{
+  background: yellow;
+  border-radius: 100%;
+}
+.green{
+  background: green;
+  border-radius: 100%;
+}
