@@ -1,0 +1,50 @@
+body,html{
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+.main{
+  width: 100%;
+  height: 640px;
+  background: url("http://wallpapercave.com/wp/STLbxhC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.main_item img{
+  width: 100%;
+}
+.main_item p {
+  width:0;
+  overflow:hidden;
+  transition:all 1s;
+  padding: 16px 0;
+  background: white;
+  font-family: 'Lobster', cursive;
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+}
+.main_item a{
+  text-decoration: none;
+  color: black;
+}
+.main_item{
+  width: 100%;
+  display: flex;
+  position:relative;
+}
+.main_item>div{
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+.active p{
+  width:280px;
+  padding: 16px 40px;
+}
+.main.active

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="css/accordion.css">
+</head>
+<body>
+  <div class="main">
+    <div class="main_container">
+    <div class="main_item">
+      <p><a href="#">www.facebook.com/JessicaAlba</a></p>
+      <div><img src="img/facebook.png" alt=""></div>
+    </div>
+    <div class="main_item">
+      <p><a href="#">www.instagram/JessicaAlba</a></p>
+      <div><img src="img/instagram.png" alt=""></div>
+    </div>
+    <div class="main_item">
+      <p><a href="#">www.linkedin/JessicaAlba</a></p>
+      <div><img src="img/linkedin.png" alt=""></div>
+    </div>
+    <div class="main_item">
+      <p><a href="#">www.twitter/JessicaAlba</a></p>
+      <div><img src="img/twitter.png" alt=""></div>
+    </div>
+    <div class="main_item">
+      <p><a href="#">www.youtube/JessicaAlba</a></p>
+      <div><img src="img/youtube.png" alt=""></div>
+    </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var social= document.getElementsByClassName("main_item");
+    for (var i = 0; i < social.length; i++) {
+      social[i].onclick = function () {
+        this.classList.toggle('active');
+      };
+    }
+  </script>
+</body>
+</html>
