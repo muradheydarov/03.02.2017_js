@@ -31,17 +31,35 @@
             var b = document.getElementById('enter');
             b.innerHTML = a;
         }
-
+        var murad
         function italic() {
+          if (murad) {
             var a = document.getElementById("text").value;
             var b = document.getElementById('enter');
             b.style.fontStyle = "italic";
-        }
-
-        function bold() {
+            murad=false;
+          }else {
             var a = document.getElementById("text").value;
             var b = document.getElementById('enter');
-            b.style.fontWeight = "bold";
+            b.style.fontStyle = "normal";
+            murad=true;
+          }
+
+        }
+        var gunel=true;
+        function bold() {
+            if (gunel) {
+              var a = document.getElementById("text").value;
+              var b = document.getElementById('enter');
+              b.style.fontWeight = "bold";
+              gunel=false;
+            }else {
+              var a = document.getElementById("text").value;
+              var b = document.getElementById('enter');
+              b.style.fontWeight = "normal";
+              gunel=true;
+            }
+
         }
 
         function fontSize() {
